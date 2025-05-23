@@ -1,0 +1,76 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+.main-box {
+    width: 800px;
+    height: 10000px;
+    margin-left: 300px;
+   /* margin-top: 150px;*/
+   
+    background-color: #ffffff;
+    padding: 15px;
+}
+.headBox {
+    height: 200px;
+    background-color: #ffffff;
+    padding: 15px;
+}
+.colorText{
+    color: #9ACD32;
+    font-family: Georgia, monospace;
+    font-size: 20px;
+}
+
+.lineWithItalics {
+    border-left: 2px solid #ccc; /* Параметры линии */
+    margin-left: 20px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
+    font-style: italic;
+   }
+.line {
+    border-left: 2px solid #ccc; /* Параметры линии */
+    margin-left: 20px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
+    }
+.gif-box{
+    width: 700px;
+    border: 10px;
+}
+
+.exmpl {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exmpl img {
+    height: auto;
+    width: 100%;
+}
+
+mainText {
+    color: black;
+    font-family: Georgia, monospace;
+    font-size: 20px;
+}
+
+.titleMainBox{
+    color: #9ACD32;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, monospace;
+}
+
+.boldText{
+    color: #9ACD32;
+    font-weight: bold;
+    font-family: Georgia,  monospace;
+    font-size: 25px;
+
+
+}
+
