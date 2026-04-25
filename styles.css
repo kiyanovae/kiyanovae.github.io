@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.plain-text-block {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.plain-text-block p {
+    margin: 0;
+    font-family: Georgia; /* наследует шрифт от body */
+    font-size: 20px;   /* наследует размер шрифта от body */
+    color: inherit;       /* наследует цвет текста от body */
+    line-height: 1.6;
+}
+
+.header-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    text-decoration: none; /* убирает подчёркивание */
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #9ACD32;
+    color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 40px;
+    color: #9ACD32;
+}
+
+.section-header h2 {
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    color: #C71585;
+}
+
+.image-text-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.image-block {
+    flex: 1;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+}
+
+.text-block {
+    flex: 1;
+    font-family: Georgia, monospace;
+    font-size: 20px;
+}
+
+.text-block h2{
+    font-size: 25px;
+    color: #C71585;
+}
+
+.text-block-full {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.text-block-inner {
+    padding: 20px;
+    background-color: white;
+    border: 3px solid #9ACD32;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.text-block-inner h2 {
+    margin-top: 0;
+    text-align: justify;
+    color: #C71585;
+    font-family: Georgia, monospace;
+    font-size: 25px;
+}
+
+.text-block-inner p {
+    text-align: justify;
+    margin-top: 20px;
+    color: black;
+    font-family: Georgia, monospace;
+    font-size: 20px;
+}
+
+.table-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+/* Стили для самой таблицы */
+.pretty-table {
+    width: 100%;
+    border-collapse: collapse; /* убираем зазоры между ячейками */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* лёгкая тень */
+}
+
+/* Заголовки таблицы */
+.pretty-table thead th {
+    background-color: #9ACD32; /* зелёный фон заголовка */
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    text-align: left;
+}
+
+/* Чётные строки */
+.pretty-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+/* Ячейки данных */
+.pretty-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Последняя строка без нижней границы */
+.pretty-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Кнопка "наверх" */
+.back-to-top {
+    position: fixed; /* фиксированное положение */
+    bottom: 30px; /* отступ снизу */
+    right: 30px; /* отступ справа */
+    width: 50px; /* размер кнопки */
+    height: 50px;
+    background-color: #9ACD32; /* зелёный фон */
+    color: white;
+    border: none;
+    border-radius: 50%; /* круглая кнопка */
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* тень */
+    transition: opacity 0.3s, transform 0.3s; /* плавные эффекты */
+    z-index: 1000; /* поверх других элементов */
+}
+
+/* Эффект при наведении */
+.back-to-top:hover {
+    background-color: #7C9A32;
+    transform: translateY(-5px);
+}
+
+/* Стрелка внутри кнопки */
+.back-to-top::after {
+    content: '↑';
+}
+
+@media (max-width: 768px) {
+     .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 0 20px;
+        max-width: none;
+        width: 100%;
+        box-sizing: border-box;
+     }
+
+     .text-block {
+         padding-left: 0;
+         width: 100%;
+         max-width: 500px;
+         margin-top: 20px;
+         box-sizing: border-box;
+     }
+
+     .image-block img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 8px;
+         box-sizing: border-box;
+     }
+
+     .button-container {
+         flex-direction: column;
+         gap: 10px;
+         width: 100%;
+         max-width: 400px;
+         margin-bottom: 25px;
+         box-sizing: border-box;
+     }
+
+     .button {
+         width: 100%;
+         text-align: left;
+         padding-left: 12px;
+         justify-content: flex-start;
+         box-sizing: border-box;
+     }
+
+     .section-header h1 {
+         font-size: 24px;
+     }
+
+     .section-header h2 {
+         font-size: 16px;
+     }
+
+     .pretty-table {
+             font-size: 14px;
+         }
+         .pretty-table thead {
+             display: none; /* скрываем заголовки на маленьких экранах */
+         }
+         .pretty-table tbody tr {
+             display: block;
+             margin-bottom: 15px;
+             border: 1px solid #ddd;
+             border-radius: 8px;
+             padding: 12px;
+             background-color: white;
+         }
+         .pretty-table td {
+             display: block;
+             text-align: right;
+             padding-left: 40%; /* отступ для "заголовков" ячеек */
+             position: relative;
+             border-bottom: none;
+         }
+         .pretty-table td::before {
+             content: attr(data-label); /* берём название столбца из data-label */
+             position: absolute;
+             left: 12px;
+             top: 0;
+             font-weight: bold;
+             width: 35%;
+             text-align: left;
+             color: #555;
+         }
+     }
+ }
